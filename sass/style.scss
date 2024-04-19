@@ -2,6 +2,7 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $dark-gray: #353535;
+$light-gray: #f3f3f3;
 
 * {
     font-family: "Roboto", sans-serif;
@@ -10,8 +11,7 @@ $dark-gray: #353535;
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 .main-container {
@@ -31,4 +31,13 @@ body {
         color: $dark-gray;
         position: absolute;
     }
+}
+
+.location {
+    @include flexbox-all-center;
+    gap: 1.5vh;
+    @include roboto-400;
+    color: $dark-gray;
+    font-size: 40px;
+    background-color: #eaeaea;
 }
