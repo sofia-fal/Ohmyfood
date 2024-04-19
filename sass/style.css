@@ -1,0 +1,29 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0fr 0fr;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.header .header__return { /* Pour pages restaurants */
+  font-size: 55px;
+  color: #353535;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */
