@@ -5,7 +5,6 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;
 }
 
 .main-container {
@@ -13,8 +12,20 @@ body {
   box-sizing: border-box;
 }
 
-.header {
+.center {
   text-align: center;
+}
+
+.title {
+  font-size: 55px;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+/* Header */
+.header {
   display: grid;
   grid-template-columns: 0fr 0fr;
   align-items: center;
@@ -27,13 +38,35 @@ body {
   position: absolute;
 }
 
+/* Section introduction et localisation */
 .location {
-  background-color: #eaeaea;
-  color: #353535;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5vh;
-  font-size: 40px;
   font-weight: 500;
+  color: #353535;
+  font-size: 36px;
+  background-color: #eaeaea;
+}
+
+.introduction {
+  background-color: #f6f6f6;
+  padding: 100px;
+}
+.introduction__title {
+  padding: 0 50px 0 50px;
+}
+.introduction__content {
+  font-size: 32px;
+  font-weight: 300;
+}
+.introduction__button {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 105%);
+  color: #ffffff;
+  font-size: 35px;
+  border: none;
+  padding: 35px 45px 35px 45px;
+  border-radius: 60px;
+  margin: 50px;
 }/*# sourceMappingURL=style.css.map */
