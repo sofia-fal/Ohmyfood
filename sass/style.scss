@@ -1,17 +1,11 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$tertiary-darker: #008766;
-$dark-gray: #353535;
-$light-gray: #f6f6f6;
+@import 'variable';
 
- @mixin flexbox-all-center {
-    display: flex;
-    align-items: center;
+@mixin flexgrid-center {
     justify-content: center;
-  }
+    align-items: center;
+}
 
-  @mixin gradient {
+@mixin gradient {
     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 105%);
   }
 
@@ -21,7 +15,7 @@ $light-gray: #f6f6f6;
 
 body {
     display: flex;
-    justify-content: center;
+    @include flexgrid-center;
 }
 
 .main-container {
@@ -45,12 +39,20 @@ body {
     font-weight: 500;
 }
 
+.font-thin {
+    font-weight: 300;
+}
+
+.font-white {
+    color: #ffffff;
+}
+
+
 /* Header */
 .header {
     display: grid;
     grid-template-columns: 0fr 0fr;
-    align-items: center;
-    justify-content: center;
+    @include flexgrid-center;
     padding: 50px;
 }
 
@@ -62,11 +64,17 @@ body {
 /* Section introduction et localisation */
 
 .location {
-    @include flexbox-all-center;
+    display: flex;
+    @include flexgrid-center;
     gap: 1.5vh;
     color: $dark-gray;
     font-size: 36px;
     background-color: #eaeaea;
+    padding: 40px;
+    a {
+        text-decoration: none;
+        color: #353535;
+    }
 }
 
 .introduction {
@@ -77,7 +85,6 @@ body {
     }
     &__content {
         font-size: 32px;
-        font-weight: 300;
     }
     &__button {
         @include gradient;
@@ -123,12 +130,10 @@ body {
         }
         &__number {
             background-color: $primary-color;
-            color: white;
             padding: 10px 22px;
             border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
             position: absolute;
             left: 49px;
-            font-weight: 300;
         }
     }
 }
@@ -173,7 +178,6 @@ body {
     position: absolute;
     top: 20px;
     right: 40px;
-    font-weight: 500;
     border-radius: 10px;
 }
 
@@ -181,13 +185,13 @@ body {
 
 .restaurant-content {
     display: grid;
+    @include flexgrid-center;
     grid-template-areas:
         "r-name heart"
         "location heart";
     grid-template-columns: 4fr 0.5fr;
     grid-auto-rows: auto;
     grid-gap: 10px;
-    align-items: center;
     padding: 20px 30px 0 30px;
 
   }
@@ -200,7 +204,6 @@ body {
   .restaurant-location {
     grid-area: location;
     font-size: 39px;
-    font-weight: 300;
   }
   
   .restaurant-heart {
@@ -212,7 +215,6 @@ body {
 
 .footer-container {
     background-color: $dark-gray;
-    color: white;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -221,11 +223,11 @@ body {
     &__logo {
         font-family: "Shrikhand", serif;
         font-size: 50px;
-        font-weight: 500;
         margin-bottom: 15px;
     }
-    p {
+    &__text {
         font-size: 42px;
+        text-decoration: none;
     }
     &__icon {
         margin-right: 35px;
