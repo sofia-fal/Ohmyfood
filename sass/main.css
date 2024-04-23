@@ -1,0 +1,47 @@
+.center {
+  text-align: center;
+}
+
+.title {
+  font-size: 55px;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.font-thin {
+  font-weight: 300;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.font-size-larger {
+  font-size: 50px;
+}
+
+.font-size-regular {
+  font-size: 39px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.round-border {
+  border-radius: 60px;
+}
+
+.white-background {
+  background-color: #ffffff;
+}
+
+.light-gray-background {
+  background-color: #f6f6f6;
+}/*# sourceMappingURL=main.css.map */
