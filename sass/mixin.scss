@@ -22,10 +22,6 @@
     align-items: center;
 }
 
-@mixin gradient {
-    background: linear-gradient(0deg, $primary-color 0%, $secondary-color 105%);
-}
-
 @mixin shadow {
     box-shadow: 0em 0.2em 0.4em rgb(0 0 0 / 28%);
 }
