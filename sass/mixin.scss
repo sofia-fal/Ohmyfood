@@ -1,5 +1,24 @@
-@mixin flexgrid-center {
+@mixin flex-all-center {
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-all-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin function-container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin function-content-flex {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -9,4 +28,8 @@
 
 @mixin shadow {
     box-shadow: 0em 0.2em 0.4em rgb(0 0 0 / 28%);
+}
+
+@mixin light-gray-bg {
+    background-color: $light-gray;
 }

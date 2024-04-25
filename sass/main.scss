@@ -5,7 +5,7 @@
 }
 
 .title {
-    font-size: 55px;
+    font-size: 60px;
 }
 
 .margin-reset {
@@ -40,10 +40,10 @@
     border-radius: 60px;
 }
 
-.white-background {
-    background-color: #ffffff;
+.centered-img {
+    object-position: center;
 }
 
-.light-gray-background {
-    background-color: $light-gray;
+.bottom-img {
+    object-position: bottom;
 }
