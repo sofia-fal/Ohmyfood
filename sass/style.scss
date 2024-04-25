@@ -50,13 +50,14 @@ body {
 }
 
 .intro {
-    background-color: $light-gray;
     padding: 100px;
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
     &__title {
         padding: 0 50px;
     }
     &__content {
-        display: inline-flex;
         font-size: 45px;
     }
     &__btn {
