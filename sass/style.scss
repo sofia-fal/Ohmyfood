@@ -87,7 +87,7 @@ body {
         border-radius: 60px;
         opacity: 0;
         z-index: -1;
-        transition: opacity 400ms;
+        transition: opacity 400ms cubic-bezier(.31,.69,.17,.87);
     }
 }
 
