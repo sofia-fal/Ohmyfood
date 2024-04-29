@@ -240,6 +240,15 @@ body {
 .restaurant-heart {
   grid-area: heart;
 }
+.restaurant-heart .fa-heart {
+  transition: 500ms cubic-bezier(0.31, 0.69, 0.17, 0.87);
+}
+.restaurant-heart .fa-heart:hover {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 105%);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
 
 /* Footer */
 .footer-container {
