@@ -248,6 +248,7 @@ body {
   background-clip: text;
   color: transparent;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* Footer */
