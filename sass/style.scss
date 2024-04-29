@@ -24,6 +24,14 @@ body {
     @include shadow;
     &__logo {
         width: 150px;
+        @media (min-width: $mobile-width) {
+            width: 200px;
+        }
+    }
+
+    @media (min-width: $mobile-width) {
+        box-shadow: none;
+        padding: 20px;
     }
 }
 
@@ -48,6 +56,10 @@ body {
     a {
         color: $dark-gray;
     }
+
+    @media (min-width: $mobile-width) {
+        box-shadow: none;
+    }
 }
 
 .intro {
@@ -55,6 +67,11 @@ body {
     background-color: $light-gray;
     display: flex;
     flex-direction: column;
+    &__title {
+        @media (min-width: $mobile-width) {
+            font-size: 30px;            
+        }
+    }
 }
 
 .btn {
@@ -128,6 +145,10 @@ body {
 #section-restaurants {
     padding: 20px;
     background-color: $light-gray;
+
+    @media (min-width: $mobile-width) {
+        padding: 10px 60px 30px 60px;
+    }
 }
 
 .restaurants-box {
@@ -136,6 +157,11 @@ body {
     justify-content: space-between;
     flex-direction: column;
     gap: 3vh;
+
+    @media (min-width: $mobile-width) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .restaurant-card {
@@ -149,6 +175,10 @@ body {
         height: 62%;
         border-radius: 10px 10px 0 0;
         object-fit: cover;
+    }
+
+    @media (min-width: $mobile-width) {
+        width: 46%;
     }
 }
 
@@ -212,9 +242,18 @@ body {
     &__logo {
         font-family: "Shrikhand", serif;
         margin-bottom: 15px;
+        @media (min-width: $mobile-width) {
+            order: 5;
+        }
     }
     &__icon {
         margin-right: 10px;
     }
+
+    @media (min-width: $mobile-width) {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: flex-end;
+        gap: 2vh;
+    }
 }
-  
