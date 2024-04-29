@@ -93,6 +93,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .btn {
   display: inline-flex;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 105%);

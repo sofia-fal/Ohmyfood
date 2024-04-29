@@ -55,11 +55,6 @@ body {
     background-color: $light-gray;
     display: flex;
     flex-direction: column;
-    &__title {
-    }
-    &__content {
-       
-    }
 }
 
 .btn {
@@ -217,9 +212,6 @@ body {
     &__logo {
         font-family: "Shrikhand", serif;
         margin-bottom: 15px;
-    }
-    &__text {
-      
     }
     &__icon {
         margin-right: 10px;
