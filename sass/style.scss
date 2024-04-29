@@ -16,13 +16,15 @@ body {
 /* Header */
 
 .header {
-    padding: 50px;
+    padding: 15px;
     @include grid-all-center;
     grid-template-columns: 0fr 0fr;
     position: relative;
     z-index: 2;
     @include shadow;
-    
+    &__logo {
+        width: 150px;
+    }
 }
 
 /*  Pour pages restaurants 
@@ -35,10 +37,9 @@ body {
 /* Section introduction et localisation */
 
 .location {
-    padding: 40px;
+    padding: 15px;
     @include flex-all-center;
     gap: 1.5vh;
-    font-size: 36px;
     color: $dark-gray;
     background-color: #eaeaea;
     @include shadow;
@@ -50,26 +51,26 @@ body {
 }
 
 .intro {
-    padding: 100px;
+    padding: 23px;
     background-color: $light-gray;
     display: flex;
     flex-direction: column;
     &__title {
-        padding: 0 50px;
     }
     &__content {
-        font-size: 45px;
+       
     }
 }
 
 .btn {
-    padding: 35px 45px;
-    margin: 40px;
     display: inline-flex;
     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 105%);
     @include shadow;
     position: relative;
     z-index: 1;
+    padding: 13px;
+    font-size: 13px;
+    margin: 15px;
     &:hover {
         &::after {
             opacity: 1;
@@ -94,35 +95,35 @@ body {
 /* Section fonctionnement */
 
 .site-functions {
-    padding: 60px;
+    padding: 25px;
     margin-bottom: 50px;
 }
 
 .function-box {
-    padding: 20px;
     @include function-container-flex;
     flex-direction: column;
     gap: 2.5vh;
     &__function {
-        padding: 40px;
+        font-size: 14px;
+        padding: 13px;
         @include function-content-flex;
         background-color: $light-gray;
         box-shadow: 0em 0.2em 0.8em #0000002b;
         &__icon {
-            margin-left: 50px;
-            margin-right: 75px;
-            font-size: 49px;
+            font-size: 17px;
+            margin-left: 20px;
+            margin-right: 15px;
             color: #7e7e7e;
             &--purple {
                 color: $primary-color;
             }
         }
         &__number {
-            padding: 10px 22px;
+            padding: 4px 9px;
             background-color: $primary-color;
             border-radius: $circle;
             position: absolute;
-            left: 49px;
+            left: 12px;
         }
     }
 }
@@ -130,7 +131,7 @@ body {
 /* Section restaurants */
 
 #section-restaurants {
-    padding: 60px 60px 100px 60px;
+    padding: 20px;
     background-color: $light-gray;
 }
 
@@ -144,27 +145,27 @@ body {
 
 .restaurant-card {
     background-color: $white;
-    border-radius: 20px;
-    height: 570px;
+    border-radius: 10px;
+    height: 210px;
     width: 100%;
     position: relative;
     &__img {
         width: 100%;
-        height: 400px;
-        border-radius: 20px 20px 0 0;
+        height: 62%;
+        border-radius: 10px 10px 0 0;
         object-fit: cover;
     }
 }
 
 .new {
     background-color: $tertiary-color;
-    font-size: 40px;
     color: $tertiary-darker;
-    padding: 20px 25px;
+    padding: 7px;
+    font-size: 13px;
     position: absolute;
-    top: 20px;
-    right: 40px;
-    border-radius: 10px;
+    top: 10px;
+    right: 10px;
+    border-radius: 2px;
     @include shadow;
 }
 
@@ -177,13 +178,13 @@ body {
         "location heart";
     grid-template-columns: 4fr 0.5fr;
     grid-auto-rows: auto;
-    grid-gap: 10px;
-    padding: 20px 30px 0 30px;
+    grid-gap: 5px;
+    padding: 10px;
   }
   
   .restaurant-name {
     grid-area: r-name;
-    font-size: 30px;
+    font-size: 12px;
   }
   
   .restaurant-location {
@@ -192,6 +193,7 @@ body {
   
   .restaurant-heart {
     grid-area: heart;
+    font-size: 19px;
     .fa-heart {
         transition: 500ms cubic-bezier(.31,.69,.17,.87);
         &:hover {
@@ -207,7 +209,7 @@ body {
 
 .footer-container {
     background-color: $dark-gray;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -217,10 +219,10 @@ body {
         margin-bottom: 15px;
     }
     &__text {
-        font-size: 42px;
+      
     }
     &__icon {
-        margin-right: 35px;
+        margin-right: 10px;
     }
 }
   

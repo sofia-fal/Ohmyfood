@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.title {
-  font-size: 60px;
-}
-
 .margin-reset {
   margin: 0;
 }
@@ -22,20 +18,12 @@
   color: #ffffff;
 }
 
-.font-size-larger {
-  font-size: 50px;
-}
-
-.font-size-regular {
-  font-size: 39px;
-}
-
 .no-decoration {
   text-decoration: none;
 }
 
 .round-border {
-  border-radius: 60px;
+  border-radius: 20px;
 }
 
 .centered-img {
