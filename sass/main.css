@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .margin-reset {
   margin: 0;
 }
@@ -24,12 +28,4 @@
 
 .round-border {
   border-radius: 20px;
-}
-
-.centered-img {
-  object-position: center;
-}
-
-.bottom-img {
-  object-position: bottom;
 }/*# sourceMappingURL=main.css.map */

@@ -29,3 +29,7 @@
 @mixin light-gray-bg {
     background-color: $light-gray;
 }
+
+@mixin tablet-padding {
+    padding: 20px 60px;
+}
