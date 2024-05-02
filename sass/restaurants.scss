@@ -1,8 +1,10 @@
-@import 'variable', 'main', 'mixin';
+@import 'variable', 'main', 'mixin', 'animations';
 
 /* Heading */
 .heading {
     width: 100%;
+    position: absolute;
+    z-index: -1;
     &__img {
         object-fit: cover;
         width: 100%;
@@ -14,6 +16,9 @@
 .menu {
     background-color: $light-gray;
     width: 100%;
+    position: relative;
+    margin-top: 150px;
+    border-radius: 30px 30px 0 0;
     &__container {
         width: 100%;
     }
@@ -73,6 +78,33 @@
     padding: 10px;
     justify-items: start;
     box-shadow: 0em 0.2em 0.8em #0000002b;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        &::after {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+        .m-price {
+            margin-right: 70px;
+        }
+    }
+
+    &::after {
+        content: '\f058';
+        font-family: FontAwesome;
+        position: absolute;
+        background-color: $tertiary-color;
+        color: $white;
+        font-size: 20px;
+        padding: 21px;
+        border-radius: 0 20px 20px 0;
+        right: 0;
+        top: 0;
+        transform: translateX(62px);
+        transition: 400ms ease-in-out;
+    }
 }
 
 .m-title {
@@ -89,4 +121,6 @@
     grid-area: mprice;
     font-size: 14px;
     align-self: end;
+    justify-self: end;
+    transition: 400ms ease-in-out;
 }
