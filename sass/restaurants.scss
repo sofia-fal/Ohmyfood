@@ -1,1 +1,92 @@
 @import 'variable', 'main', 'mixin';
+
+/* Heading */
+.heading {
+    width: 100%;
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Menu */
+.menu {
+    background-color: $light-gray;
+    width: 100%;
+    &__container {
+        width: 100%;
+    }
+}
+
+.menu-container {
+    width: 100%;
+}
+
+.menu-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 19px;
+    &__name {
+        font-family: "Shrikhand", serif;
+    }
+    .fa-heart {
+        font-size: 20px;
+        transition: 500ms cubic-bezier(.31,.69,.17,.87);
+        &:hover {
+            background: $gradient;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.m-course {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    &__title {
+        text-transform: uppercase;
+        font-size: 15px;
+        span {
+            text-decoration: underline $tertiary-color;
+            text-underline-position: under;
+            text-decoration-thickness: 0.1em;
+        }
+    }
+}
+
+.m-content {
+    background-color: $white;
+    @include grid-all-center;
+    grid-template-areas:
+        "mtitle mprice"
+        "msub mprice";
+    grid-template-columns: 4fr 0.5fr;
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+    padding: 10px;
+    justify-items: start;
+    box-shadow: 0em 0.2em 0.8em #0000002b;
+}
+
+.m-title {
+    grid-area: mtitle;
+    font-size: 17px;
+}
+  
+.m-sub {
+    grid-area: msub;
+    font-size: 14px;
+}
+  
+.m-price {
+    grid-area: mprice;
+    font-size: 14px;
+    align-self: end;
+}
