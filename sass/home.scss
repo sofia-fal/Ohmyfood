@@ -1,47 +1,5 @@
 @import 'variable', 'main', 'mixin';
 
-body {
-    text-align: center;
-}
-
-.main-container {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-* {
-    font-family: "Roboto", sans-serif;
-}
-
-/* Header */
-
-.header {
-    padding: 15px;
-    @include grid-all-center;
-    grid-template-columns: 0fr 0fr;
-    position: relative;
-    z-index: 2;
-    @include shadow;
-    &__logo {
-        width: 150px;
-        @media (min-width: $mobile-width) {
-            width: 200px;
-        }
-    }
-
-    @media (min-width: $mobile-width) {
-        box-shadow: none;
-        padding: 20px;
-    }
-}
-
-/*  Pour pages restaurants 
-.header__return {
-    color: $dark-gray;
-    position: absolute;
-}
-*/
-
 /* Section introduction et localisation */
 
 .location {
@@ -269,30 +227,3 @@ body {
         }
     }
   }
-/* Footer */
-
-.footer-container {
-    background-color: $dark-gray;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0.6vh;
-    &__logo {
-        font-family: "Shrikhand", serif;
-        margin-bottom: 15px;
-        @media (min-width: $mobile-width) {
-            order: 5;
-        }
-    }
-    &__icon {
-        margin-right: 10px;
-    }
-
-    @media (min-width: $tablet-width) {
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: flex-end;
-        gap: 2vh;
-    }
-}
