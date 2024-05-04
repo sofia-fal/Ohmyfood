@@ -159,6 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  margin-bottom: 20px;
 }
 .m-course__title {
   text-transform: uppercase;
@@ -210,11 +211,21 @@ body {
 .m-title {
   grid-area: mtitle;
   font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: left;
 }
 
 .m-sub {
   grid-area: msub;
   font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: left;
 }
 
 .m-price {
@@ -223,4 +234,35 @@ body {
   align-self: end;
   justify-self: end;
   transition: 400ms ease-in-out;
+}
+
+.btn {
+  display: inline-flex;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 105%);
+  box-shadow: 0em 0.2em 0.4em rgba(0, 0, 0, 0.28);
+  position: relative;
+  z-index: 1;
+  padding: 13px;
+  font-size: 13px;
+  margin: 15px;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #a16be0 0%, #ff93e1 105%);
+  box-shadow: 0em 0.2em 0.6em rgba(0, 0, 0, 0.28);
+  border-radius: 60px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms cubic-bezier(0.31, 0.69, 0.17, 0.87);
+}
+.btn--padding {
+  padding: 13px 30px;
 }/*# sourceMappingURL=restaurants.css.map */
