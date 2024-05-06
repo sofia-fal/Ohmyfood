@@ -64,7 +64,7 @@ body {
 }
 .header__return {
   color: #353535;
-  position: fixed;
+  position: absolute;
   left: 30px;
 }
 @media (min-width: 425.5px) {
@@ -102,6 +102,80 @@ body {
     justify-content: flex-end;
     gap: 2vh;
   }
+}
+
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes dots-7ar3yq {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+@keyframes fadeOut {
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Loader */
+.loader {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999999;
+  animation: fadeOut 3s both;
+}
+
+.dots {
+  width: 56px;
+  height: 26.9px;
+  background: radial-gradient(circle closest-side, #9356dc 90%, rgba(0, 0, 0, 0)) 0% 50%, radial-gradient(circle closest-side, #9356dc 90%, rgba(0, 0, 0, 0)) 50% 50%, radial-gradient(circle closest-side, #9356dc 90%, rgba(0, 0, 0, 0)) 100% 50%;
+  background-size: 33.3333333333% 13.4px;
+  background-repeat: no-repeat;
+  animation: dots-7ar3yq 1s infinite linear;
+  position: absolute;
+  left: 45%;
+  top: 45%;
 }
 
 /* Section introduction et localisation */

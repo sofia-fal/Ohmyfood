@@ -1,4 +1,29 @@
-@import 'variable', 'main', 'mixin';
+@import 'variable', 'main', 'mixin', 'animations';
+
+/* Loader */
+
+.loader {
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    animation: fadeOut 3s both;
+}
+
+.dots {
+    width: 56px;
+    height: 26.9px;
+    background: radial-gradient(circle closest-side,#9356dc 90%,#0000) 0%   50%,
+    radial-gradient(circle closest-side,#9356dc 90%,#0000) 50%  50%,
+    radial-gradient(circle closest-side,#9356dc 90%,#0000) 100% 50%;
+    background-size: calc(100%/3) 13.4px;
+    background-repeat: no-repeat;
+    animation: dots-7ar3yq 1s infinite linear;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+ }
 
 /* Section introduction et localisation */
 
