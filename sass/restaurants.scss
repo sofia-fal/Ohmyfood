@@ -65,6 +65,18 @@
             text-decoration-thickness: 0.1em;
         }
     }
+
+    &:nth-child(2) {
+        animation: fade-in-left 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    &:nth-child(3) {
+        animation: fade-in-left 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation-delay: .2s;
+    }
+    &:nth-child(4) {
+        animation: fade-in-left 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation-delay: .4s;
+    }
 }
 
 .m-content {
