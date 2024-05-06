@@ -359,6 +359,9 @@ body {
     object-position: center;
   }
 }
+.restaurant-card a {
+  color: #000000;
+}
 @media (min-width: 425.5px) {
   .restaurant-card {
     height: 250px;
