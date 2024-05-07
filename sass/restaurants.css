@@ -145,28 +145,33 @@ body {
 @keyframes fadeOut {
   10% {
     opacity: 1;
+    z-index: 9999999;
   }
   40% {
     opacity: 1;
+    z-index: 9999999;
   }
   80% {
     opacity: 1;
+    z-index: 9999999;
   }
   100% {
     opacity: 0;
+    display: none;
+    z-index: -1;
   }
 }
 /* Heading */
 .heading {
   width: 100%;
-  height: 14%;
+  height: 200px;
   position: absolute;
   z-index: -1;
 }
 .heading__img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 200px;
 }
 
 /* Menu */
@@ -339,6 +344,7 @@ body {
   opacity: 0;
   z-index: -1;
   transition: opacity 400ms cubic-bezier(0.31, 0.69, 0.17, 0.87);
+  cursor: pointer;
 }
 .btn--padding {
   padding: 13px 30px;
